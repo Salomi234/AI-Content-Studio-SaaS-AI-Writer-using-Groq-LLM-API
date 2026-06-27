@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Content Studio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="topbar">
+    <h1>AI Content Studio</h1>
+    <span class="badge">SaaS Beta</span>
+  </div>
+
+  <p class="subtitle">Generate AI blogs, captions, emails instantly</p>
+
+  <div class="examples">
+    <p onclick="fillPrompt('AI in education')">💡 AI in education</p>
+    <p onclick="fillPrompt('future of jobs')">💡 Future of jobs</p>
+    <p onclick="fillPrompt('social media marketing')">💡 Social media marketing</p>
+  </div>
+
+  <label>Content Type</label>
+  <select id="type">
+    <option value="blog">Blog</option>
+    <option value="caption">Caption</option>
+    <option value="email">Email</option>
+    <option value="ad">Ad Copy</option>
+  </select>
+
+  <label>Tone</label>
+  <select id="tone">
+    <option value="formal">Formal</option>
+    <option value="friendly">Friendly</option>
+    <option value="professional">Professional</option>
+    <option value="persuasive">Persuasive</option>
+  </select>
+
+  <input id="topic" placeholder="Enter your topic..." />
+
+  <div class="buttons">
+    <button onclick="generateContent()">✨ Generate</button>
+    <button onclick="copyText()" class="secondary">📋 Copy</button>
+    <button onclick="clearOutput()" class="danger">🧹 Clear</button>
+  </div>
+
+  <div id="status">Ready...</div>
+  <div id="counter">Words: 0</div>
+
+  <div id="output"></div>
+
+  <h3>History</h3>
+  <div id="historyList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
