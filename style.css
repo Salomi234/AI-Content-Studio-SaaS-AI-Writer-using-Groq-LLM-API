@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle at top, #0b1220, #050814);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 420px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  font-size: 11px;
+  background: #6366f1;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.subtitle {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.examples p {
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.examples p:hover {
+  color: #a5b4fc;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.07);
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+}
+
+.secondary {
+  background: rgba(255,255,255,0.1);
+}
+
+.danger {
+  background: #ef4444;
+}
+
+#output {
+  margin-top: 10px;
+  padding: 10px;
+  min-height: 120px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  white-space: pre-wrap;
+}
+
+#status, #counter {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.history-item {
+  font-size: 12px;
+  padding: 6px;
+  margin-top: 5px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+  cursor: pointer;
+}
